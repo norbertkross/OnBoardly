@@ -1,8 +1,8 @@
 name: onboardly
 description: A new flutter plugin project.
 version: 0.0.1
-author:
-homepage:
+author: Norbert Aberor <norbertaberor@gmail.com>
+homepage: https://github.com/norbertkross/onboardly.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -13,6 +13,9 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+    
+  # Get Package For StateManagement
+  get: ^3.5.1
 
 dev_dependencies:
   flutter_test:

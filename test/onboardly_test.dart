@@ -1,23 +1,23 @@
-import 'package:flutter/services.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:onboardly/onboardly.dart';
+// import 'package:flutter/services.dart';
+// import 'package:flutter_test/flutter_test.dart';
+// import 'package:onboardly/onboardly.dart';
 
-void main() {
-  const MethodChannel channel = MethodChannel('onboardly');
+// void main() {
+//   const MethodChannel channel = MethodChannel('onboardly');
 
-  TestWidgetsFlutterBinding.ensureInitialized();
+//   TestWidgetsFlutterBinding.ensureInitialized();
 
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
+//   setUp(() {
+//     channel.setMockMethodCallHandler((MethodCall methodCall) async {
+//       return '42';
+//     });
+//   });
 
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
+//   tearDown(() {
+//     channel.setMockMethodCallHandler(null);
+//   });
 
-  test('getPlatformVersion', () async {
-    expect(await Onboardly.platformVersion, '42');
-  });
-}
+//   test('getPlatformVersion', () async {
+//     expect(await Onboardly.platformVersion, '42');
+//   });
+// }
